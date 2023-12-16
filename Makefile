@@ -13,5 +13,8 @@ lint:
 web:
 	npm run web:start
 
+icons:
+	npm run generate-icons
+
 version: 
 	npm run version-update

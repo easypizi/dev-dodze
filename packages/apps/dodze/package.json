@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
+    "@dev-dodze/icons": "^1.0.0",
+    "@dev-dodze/ui": "^1.0.0",
     "react-router-dom": "^6.11.2",
     "styled-components": "^5.3.11"
   },
