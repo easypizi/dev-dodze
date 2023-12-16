@@ -1,28 +1,33 @@
 {
-  "name": "dev-dodze",
+  "name": "@dev-dodze/root",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "workspaces": [
+    "packages/apps/*",
+    "packages/tools/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">8.0.0"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "lerna run build --concurrency=4",
+    "watch": "lerna run watch --parallel --stream",
+    "version-update": "lerna version --no-git-tag-version --no-push",
+    "lint": "lerna run lint --stream --concurrency=5",
+    "clean": "lerna clean",
+    "web:start": "lerna run start --scope=@dev-dodze/main"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "husky": "^8.0.0",
+    "lerna": "^7.1.5",
+    "typescript": "^5.1.6",
+    "vite": "^5.0.0"
+  },
+  "overrides": {
+    "typescript": "^5.1.6"
   }
 }
