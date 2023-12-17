@@ -2,10 +2,10 @@ import * as React from 'react';
 import type { SVGProps } from 'react';
 
 const SvgFacebook = (props: SVGProps<SVGSVGElement>) => (
-  <svg width="1em" height="1em" fill="none" viewBox="0 0 24 24" {...props}>
+  <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
     <path
-      fill="#1877F2"
-      d="M23.556 12.026c0-6.351-5.15-11.5-11.5-11.5-6.352 0-11.5 5.149-11.5 11.5 0 5.74 4.205 10.498 9.703 11.36V15.35h-2.92v-3.324h2.92V9.493c0-2.883 1.717-4.475 4.343-4.475 1.259 0 2.575.225 2.575.225v2.83h-1.45c-1.429 0-1.875.887-1.875 1.796v2.157h3.19l-.51 3.324h-2.68v8.037c5.498-.863 9.704-5.62 9.704-11.36"
+      fill="currentColor"
+      d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m3 8h-1.35c-.538 0-.65.221-.65.778V10h2l-.209 2H13v7h-3v-7H8v-2h2V7.692C10 5.923 10.931 5 13.029 5H15z"
     />
   </svg>
 );

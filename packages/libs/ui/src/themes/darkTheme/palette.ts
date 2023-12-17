@@ -2,7 +2,7 @@ import type { ThemePalette } from '../types';
 
 export const palette: ThemePalette = {
   background: {
-    main: '#181A1F',
+    main: '#000000',
     overlay: '#30343F',
   },
   neutral100: '#181A1F',
