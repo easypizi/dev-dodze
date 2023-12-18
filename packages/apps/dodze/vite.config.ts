@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react-swc';
 // https://vitejs.dev/config/
 export default defineConfig({
   envPrefix: 'DEV_DODZE',
-  base: 'dev-dodze',
   server: {
     port: 3000,
     open: true,
