@@ -32,7 +32,6 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-          npx lerna bootstrap
 
       - name: Build Project
         run: npm run build
