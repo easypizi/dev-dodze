@@ -1,4 +1,4 @@
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -30,8 +30,7 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: |
-          npm install
+        run: npm install
 
       - name: Build Project
         run: npm run build
@@ -57,5 +56,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /home/runner/work/dev-dodze/dev-dodze/build-artifacts
+          github_token: ${{ secrets.DEPLOY_TOKEN }}
+          publish_dir: ./build-artifacts 
