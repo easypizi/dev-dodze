@@ -33,16 +33,16 @@ export const MainPage: FC = () => {
           <Title variant={isMobile ? 'headerMD' : 'headerLG'}>
             Software Engineer
           </Title>
-          <Stack>
+          <Stack gap={3}>
             <Description variant="textLG">
-              Hi! My name is Ivan Tolstov.
+              — Hi! My name is Ivan Tolstov.
             </Description>
             <Description variant="textLG">
-              I Like AI, Robots, Videogames and coding cool stuff with JS.
-              <br />
-              {`Currently living in ${location}.`}
-              <br />
-              Drop me a line if you want to hire me
+              — I Like AI, robots, videogames and coding cool stuff with JS.
+            </Description>
+            <Description variant="textLG">{`— Currently living in ${location}.`}</Description>
+            <Description variant="textLG">
+              — Drop me a line if you want to hire me.
             </Description>
           </Stack>
         </ContentBlock>

@@ -27,7 +27,7 @@ export const Title = styled(Typography)`
 
 export const Description = styled(Typography)`
   ${({ theme }) => css`
-    line-height: ${theme.spacing.get(10)};
+    line-height: ${theme.spacing.get(5)};
   `}
 `;
 
