@@ -6,7 +6,7 @@ import { MainPage } from '../screens/MainPage';
 export const RootNavigator: FC = () => {
   return (
     <Routes>
-      <Route path="/dev-dodze" element={<AppContainer />}>
+      <Route path="/" element={<AppContainer />}>
         <Route index element={<MainPage />} />
         {/* <Route path="terms" element={<TermsScreen />} /> */}
         {/* <Route path="*" element={<NotFoundScreen />} /> */}

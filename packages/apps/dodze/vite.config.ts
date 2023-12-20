@@ -1,9 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig({
   envPrefix: 'DEV_DODZE',
-  base: '/dev-dodze/',
   server: {
     port: 3000,
     open: true,
