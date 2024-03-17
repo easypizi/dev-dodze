@@ -21,7 +21,7 @@ import {
 
 // TODO: parse my live location during on some data.
 
-const location = 'Moscow';
+const location = 'San Francisco, CA';
 
 export const MainPage: FC = () => {
   const isMobile = useBreakpoint('down', 'md');
